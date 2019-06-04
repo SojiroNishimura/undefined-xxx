@@ -1,17 +1,9 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import Kubrick from "typography-theme-wordpress-kubrick"
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-  }
-}
+Kubrick.baseFontSize = "16"
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(Kubrick)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
