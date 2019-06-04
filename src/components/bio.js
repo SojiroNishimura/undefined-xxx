@@ -38,12 +38,14 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Tokyo,
-              building nothing useful.
+              Written by <strong>{author}</strong> who is mobile app engineer, lives and works in Tokyo,
+              wandering through Kyoto→Berlin→Tokyo→<br />
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You can follow him on Twitter
+                Twitter
               </a>
+              {`, `}
+              <a href="https://github.com/SojiroNishimura">Github</a>
             </p>
           </div>
         )
