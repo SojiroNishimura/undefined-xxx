@@ -15,7 +15,6 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -38,6 +37,11 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <hr style={{
+          marginTop: rhythm(2),
+          marginBottom: rhythm(2),
+        }}/>
+        <Bio />
       </Layout>
     )
   }
