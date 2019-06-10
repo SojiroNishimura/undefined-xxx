@@ -40,6 +40,13 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-embed-gist`,
+            options: {
+              username: 'SojiroNishimura',
+              includeDefaultCss: true
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
