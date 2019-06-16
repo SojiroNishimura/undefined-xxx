@@ -43,8 +43,8 @@ class BlogIndex extends React.Component {
           marginTop: rhythm(2),
           marginBottom: rhythm(2),
         }}/>
-        <GoogleAd />
         <Bio />
+        <GoogleAd />
       </Layout>
     )
   }

@@ -37,8 +37,8 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <GoogleAd />
         <Bio />
+        <GoogleAd />
 
         <ul
           style={{
