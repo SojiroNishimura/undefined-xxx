@@ -7,6 +7,10 @@ module.exports = {
     social: {
       twitter: `snishimura926`,
     },
+    adsense: {
+      client: "ca-pub-8679261442356209",
+      slot: "8565035599"
+    },
   },
   plugins: [
     {

@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import GoogleAd from "../components/google-ad"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -15,6 +16,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
+        <GoogleAd />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -41,6 +43,7 @@ class BlogIndex extends React.Component {
           marginTop: rhythm(2),
           marginBottom: rhythm(2),
         }}/>
+        <GoogleAd />
         <Bio />
       </Layout>
     )

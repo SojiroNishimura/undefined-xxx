@@ -13,10 +13,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <Adsense.Google
-          client="ca-pub-8679261442356209"
-          slot=""
-        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
