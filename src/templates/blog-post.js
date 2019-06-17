@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GoogleAd from "../components/google-ad"
+import ShareContainer from "../components/share-container"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -32,8 +33,10 @@ class BlogPostTemplate extends React.Component {
         </p>
         <GoogleAd />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ShareContainer title={post.frontmatter.title} url={this.props.location.href} />
         <hr
           style={{
+            marginTop: rhythm(1),
             marginBottom: rhythm(1),
           }}
         />
