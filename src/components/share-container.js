@@ -14,7 +14,6 @@ import { rhythm } from "../utils/typography"
 
 class ShareContainer extends React.Component {
   render() {
-    console.log(this.props)
     const iconSize = 40
     const { title, url } = this.props
     const iconStyle = {
