@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import { siteMetadata } from "../../gatsby-config"
 
 class Layout extends React.Component {
   render() {
@@ -63,7 +64,7 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © <a href={`https://twitter.com/snishimura926`}>@snishimura</a> {new Date().getFullYear()}, Built with
+          © {siteMetadata.title}, {new Date().getFullYear()} Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
